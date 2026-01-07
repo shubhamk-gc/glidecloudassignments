@@ -1,0 +1,7 @@
+Retrieval Augmented Generation (RAG) is an AI technique that combines retrieval and generation.
+RAG retrieves relevant documents from a vector database.
+Vector databases store embeddings for semantic search.
+Embeddings are numerical representations of text.
+ChromaDB is an open-source vector database.
+Ollama allows running LLMs locally.
+FastAPI is used to build APIs for AI systems.
