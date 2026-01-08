@@ -18,7 +18,7 @@ documents = results.get("documents", [[]])[0]
 distances = results.get("distances", [[]])[0]
 
 if not documents:
-    print("❌ No relevant documents found.")
+    print(" No relevant documents found.")
 else:
     for doc, dist in zip(documents, distances):
-        print(f"\n📄 Document (distance={dist:.4f}):\n{doc}")
+        print(f"\n Document (distance={dist:.4f}):\n{doc}")

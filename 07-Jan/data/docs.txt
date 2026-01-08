@@ -1,7 +1,30 @@
-Retrieval Augmented Generation (RAG) is an AI technique that combines retrieval and generation.
-RAG retrieves relevant documents from a vector database.
-Vector databases store embeddings for semantic search.
-Embeddings are numerical representations of text.
-ChromaDB is an open-source vector database.
-Ollama allows running LLMs locally.
-FastAPI is used to build APIs for AI systems.
+Retrieval Augmented Generation (RAG) is an AI technique that combines information retrieval with text generation.
+It allows large language models to fetch relevant external documents before generating an answer.
+This helps reduce hallucinations and improves factual accuracy.
+
+In a typical RAG pipeline, documents are first converted into vector embeddings using an embedding model.
+These embeddings are stored in a vector database such as ChromaDB, FAISS, or Pinecone.
+When a user asks a question, the query is also converted into an embedding.
+The vector database then performs a similarity search to find the most relevant documents.
+
+ChromaDB is an open-source vector database designed for AI applications.
+It supports persistent storage, fast similarity search, and metadata filtering.
+ChromaDB works well with Python and integrates easily with frameworks like LangChain.
+
+FastAPI is a modern Python web framework used to build APIs quickly and efficiently.
+It is commonly used to expose machine learning models and vector search endpoints.
+FastAPI automatically generates interactive API documentation using Swagger UI.
+
+Vector embeddings are numerical representations of text.
+They capture semantic meaning, allowing similar texts to have similar vectors.
+Popular embedding models include OpenAI embeddings, Sentence Transformers, and HuggingFace models.
+
+In this project, documents are loaded from a text file and split into chunks.
+Each chunk is embedded and stored in ChromaDB.
+A FastAPI endpoint accepts user queries and retrieves the most relevant chunks using vector similarity.
+
+This approach is commonly used in:
+- Chatbots
+- Question answering systems
+- Knowledge base search
+- AI assistants with private data
