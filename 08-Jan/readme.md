@@ -1,10 +1,10 @@
-**Day 03-> 08-Jan
+** Day 03-> 08-Jan
 
 A vector-based document search system using SentenceTransformer embeddings and ChromaDB, without using any Large Language Model (LLM) for answering queries.
 
 The system focuses on indexing, embeddings, and similarity search algorithms, which is a core foundation for Retrieval-Augmented Generation (RAG) systems.
 
-🚀 What This Project Does
+What This Project Does
 
 Loads documents from a text file
 
